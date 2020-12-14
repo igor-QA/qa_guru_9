@@ -17,7 +17,7 @@ public class BusinessServicesTests extends TestBase {
         $(".CookieOffer__buttons").click();
 
         step("Перейти на страницу 'Подобрать тариф  для бизнеса' ", () ->
-                $x("//*[@id='__next']/div/main/section[1]/div/a[2]").click());
+                $("#__next a:nth-child(2) h4").click());
         switchTo().window(1);
 
         step("Проверить наличие на страницы вкладов", () ->
@@ -51,5 +51,5 @@ public class BusinessServicesTests extends TestBase {
                 $("h1.Typography").shouldHave(text("Успех"))); //ДОХОДНЫЙ
 
     }
-}
 
+}
