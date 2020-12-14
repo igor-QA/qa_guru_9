@@ -11,7 +11,6 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static helpers.AttachmentsHelper.*;
 import static helpers.AttachmentsHelper.attachVideo;
 
-
 public class TestBase {
 
     @BeforeAll
@@ -36,7 +35,6 @@ public class TestBase {
     @AfterEach
     @Step("Attachments")
 
-
     public void afterEach () {
         attachScreenshot("Last screenshot");
         attachPageSource();
@@ -46,5 +44,3 @@ public class TestBase {
         closeWebDriver();
     }
 }
-
-

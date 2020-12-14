@@ -29,6 +29,7 @@ public class BusinessServicesTests extends TestBase {
         step("Проверить успешность открытия страницы Вклада", () ->
                 $("h2.Typography").shouldHave(text("Условия")));
     }
+
     @Test
     @DisplayName("Проверить раздел Тарифа МСБ - Негативный сценарий")
     void unsuccessfulOpenTariffPage() {
@@ -51,9 +52,4 @@ public class BusinessServicesTests extends TestBase {
 
     }
 }
-
-
-
-
-
 
